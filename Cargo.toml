@@ -1,0 +1,16 @@
+[package]
+name = "stix2"
+version = "0.1.0"
+authors = ["Oliver Scherer <oliver.scherer@cosmian.com>"]
+edition = "2018"
+license = "MIT AND Apache-2.0"
+description = "serde-json datastructures and convenience functions for parsing and generating stix2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0"
+serde_json = { version = "1.0", optional = true }
+
+[features]
+default = ["serde_json"]
