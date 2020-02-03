@@ -1,5 +1,4 @@
-use serde_derive::{Serialize, Deserialize};
-use std::collections::HashMap;
+use serde_derive::{Deserialize, Serialize};
 use std::fmt;
 
 #[derive(Serialize, Deserialize)]
@@ -36,4 +35,4 @@ impl fmt::Display for Bundle {
     }
 }
 
-pub type Object = HashMap<String, serde_json::Value>;
+pub type Object = serde_json::Map<String, serde_json::Value>;
